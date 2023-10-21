@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulir Buku Tamu</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+        }
+
+        h2 {
+            text-align: center;
+            color: #333;
+        }
+
+        form {
+            text-align: left;
+        }
+        nav {
+            background-color: #444;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+        label {
+            display: block;
+            margin-top: 10px;
+            font-weight: bold;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="radio"],
+        input[type="checkbox"] {
+            margin-right: 5px;
+        }
+
+        select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        input[type="submit"] {
+            background-color: #007bff;
+            color: #fff;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="https://tik.ft.unm.ac.id">JTIK</a>
+        <a href="index.html">Home</a>
+        <a href="artikel.html">about me</a>
+        <a href="buku_tamu.html">buku tamu</a>
+        <a href="matakuliah.html">mata kuliah</a>
+        <a href="pendidikan.html">pendidikan</a>
+        <a href="daftar barang.html">daftar barang</a>
+    </nav>  
+    <div class="container">
+        <h2>Form Buku Tamu</h2>
+        <form>
+            <label for="nama_lengkap">Nama Lengkap:</label>
+            <input type="text" id="nama_lengkap" name="nama_lengkap" size="40">
+            
+            <label for="jenis_kelamin">Jenis Kelamin:</label><br>
+            <input type="radio" id="laki-laki" name="jenis_kelamin" value="L">
+            <label for="laki-laki">Laki-Laki</label>
+            <input type="radio" id="perempuan" name="jenis_kelamin" value="P">
+            <label for="perempuan">Perempuan</label><br><br>
+            
+            <label for="alamat">Alamat Tinggal:</label>
+            <input type="text" id="alamat" name="alamat" size="40"><br><br>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" size="40"><br><br>
+            
+            <label for="sosial_media">Aktif pada Sosial Media:</label><br>
+            <input type="checkbox" id="facebook" name="facebook" value="Ya" checked>
+            <label for="facebook">Facebook</label>
+            <input type="checkbox" id="twitter" name="twitter" value="Ya">
+            <label for="twitter">Twitter</label>
+            <input type="checkbox" id="instagram" name="instagram" value="Ya">
+            <label for="instagram">Instagram</label>
+            <input type="checkbox" id="path" name="path" value="Ya">
+            <label for="path">Path</label><br><br>
+            
+            <label for="info">Mengetahui Ini Dari:</label><br>
+            <select id="info" name="info">
+                <option selected="selected">Pilih</option>
+                <option value="web">Web</option>
+                <option value="surat kabar">Surat Kabar</option>
+                <option value="teman kerabat">Teman/Kerabat</option>
+                <option value="browsing internet">Browsing Internet</option>
+            </select><br><br>
+            
+            <label for="pesan">Pesan:</label><br>
+            <textarea id="pesan" name="pesan" cols="40"></textarea><br><br>
+            
+            <input type="submit" value="Kirim">
+        </form>
+    </div>
+</
